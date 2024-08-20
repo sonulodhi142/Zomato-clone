@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    color: black;
+}
+
+.navbar-logo{
+    color: red;
+    margin-top: 20px;
+}
+
+.Navbar-link ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.Navbar-link ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
