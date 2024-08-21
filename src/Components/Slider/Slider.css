@@ -1,0 +1,86 @@
+/* Ensure the slider takes full width */
+.carousel {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  /* Style for each carousel item (slide) */
+  .carousel-item {
+    height: 500px;
+    background-color: #333; /* Fallback color */
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Caption styling */
+  .carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Transparent background for better readability */
+    padding: 10px 20px;
+    text-align: left;
+    border-radius: 5px;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-caption p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Navigation controls styling */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for icons */
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  /* Indicators styling */
+  .carousel-indicators li {
+    background-color: #666;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #fff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .carousel-caption {
+      font-size: 0.9rem;
+      padding: 5px 10px;
+    }
+  
+    .carousel-caption h5 {
+      font-size: 1.2rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+  
+    .carousel-item {
+      height: 300px;
+    }
+  }
+  
