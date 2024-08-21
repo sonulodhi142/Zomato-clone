@@ -4,7 +4,8 @@ import './Login.css'
 
 const Login = () =>{
     return (
-        <div className="loginsignup"> 
+        <div className="bg">
+            <div className="loginsignup"> 
             <div className="loginsignup-container">
                 <h1>Sign Up</h1>
                 <div className="loginsignup-fields">
@@ -19,6 +20,7 @@ const Login = () =>{
                 <p >By continuing , i agree to the term of use & privacy policy.</p>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

@@ -5,7 +5,8 @@ import p9_img from './image/bg-final.jpg'
 const About = ( ) => {
 
     return(
-        <div className="about">
+        <div className="bg">
+            <div className="about">
            <div className="about-left">
                 <h1>Zomato Clone</h1>
                 <h2>India's greatest hotel</h2>
@@ -14,6 +15,7 @@ const About = ( ) => {
             <div className="about-right">
                 <img src={p9_img} alt="" />
             </div> 
+        </div>
         </div>
     )
 }

@@ -4,7 +4,8 @@ import './contactus.css'
 const Contact = ( ) => {
 
     return(
-        <div className="contactus">
+        <div className="bg">
+            <div className="contactus">
             <div className="left-part">
                 <h1>Zomato Clone</h1>
                 <h2>India's greatest hotel</h2>
@@ -22,6 +23,7 @@ const Contact = ( ) => {
                 </form>
             </div>
             
+        </div>
         </div>
     )
 }

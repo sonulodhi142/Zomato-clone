@@ -9,6 +9,7 @@ import Contact from "./pages/contactus";
 import ShopCantaxtProvider from "./Contaxt/context";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Discription from "./pages/Discription";
   
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/about" element={<About/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/login" element={<Login/>} ></Route>
+        <Route path="/desciption" element={<Discription/>}></Route>
       </Routes>
       </div>
     </div>
