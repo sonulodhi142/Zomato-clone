@@ -10,6 +10,8 @@ import ShopCantaxtProvider from "./Contaxt/context";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Discription from "./pages/Discription";
+import Front from "./pages/Front";
+
   
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
       <div className="path">
       <Routes>
 
+        <Route path="/" element={<Front/>}></Route>
         <Route path="/home" element={<Home/>}></Route>
         <Route path="/menu" element={<Menu/>}></Route>
         <Route path="/about" element={<About/>}></Route>

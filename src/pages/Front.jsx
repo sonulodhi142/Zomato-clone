@@ -1,5 +1,10 @@
 import React from "react";
 import "./Front.css";
+import pizza from './image/pizza.avif'
+import tomato from './image/tomato.avif'
+import burgur from './image/burger.avif'
+import momo from './image/momo.avif'
+import bgvideo from './image/bgVideo.mp4'
 
 const Front = () => {
   return (
@@ -12,7 +17,7 @@ const Front = () => {
           playsInline
           className="bg-video"
         >
-          <source src="./video/bgVideo.mp4" type="video/mp4" />
+          <source src={bgvideo} type="video/mp4" />
         </video>
 
         <div className="overPlay">
@@ -30,11 +35,11 @@ const Front = () => {
       </section>
 
       <section className="bg-white" id="imgs">
-        <img className="momo" src="./images/momo.avif" alt="momo" />
-        <img className="burger" src="./images/burger.avif" alt="burger" />
-        <img className="tomato1" src="./images/tomato.avif" alt="tomato" />
-        <img className="tomato2" src="./images/tomato.avif" alt="tomato" />
-        <img className="pizza" id="piz" src="./images/pizza.avif" alt="pizza" />
+        <img className="momo" src={momo} alt="momo" />
+        <img className="burger" src={burgur} alt="burger" />
+        <img className="tomato1" src={tomato} alt="tomato" />
+        <img className="tomato2" src={tomato} alt="tomato" />
+        <img className="pizza" id="piz" src={pizza} alt="pizza" />
 
         <div className="bgWhiteContant">
           <h1>Better food for</h1>
