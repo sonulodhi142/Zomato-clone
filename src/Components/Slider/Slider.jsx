@@ -5,11 +5,11 @@ import new_collections from '../Assets/new_collections'
 const Slider = () =>{
 
     return(
-        <div className="carausal">
+        <div className="c">
             {
                 new_collections.map((slide => {
-                    return <div className="slide">
-                        <img src={slide.image} alt="" />
+                    return <div className="c-item">
+                        <img src={slide.image} alt="" className="c-img" />
                     </div>
                 }))
             }
