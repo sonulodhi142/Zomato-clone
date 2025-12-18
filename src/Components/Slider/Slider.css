@@ -17,6 +17,12 @@
     position-anchor: --carousel;
     position-area: left center;
     transform: translate(-400%);
+    border: none;
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(183, 182, 182);
+    border-radius: 50%;
+    box-shadow: -2px -2px 2px rgba(255, 255, 255, 0.592) inset;
   }
   .c::scroll-button(right){
     content: '>';
