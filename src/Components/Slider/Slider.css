@@ -9,12 +9,21 @@
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    anchor-name: --carousel;
   }
-  .c::scroll-button(left){
+  .c::scroll-button(left), .c::scroll-button(right){
     content: '<';
+    position: fixed;
+    position-anchor: --carousel;
+    position-area: left center;
+    transform: translate(-400%);
   }
   .c::scroll-button(right){
     content: '>';
+    position: fixed;
+    position-anchor: --carousel;
+    position-area: right center;
+    transform: translate(400%);
   }
 
   .c-item{
