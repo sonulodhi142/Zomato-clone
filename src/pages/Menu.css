@@ -16,11 +16,20 @@
     padding: 20px;
 }
 
+
 .card-img-top{
   border-radius: 10px;
+  width: 60%;
 }
 
+.card-flex{
+  align-content: center;
+  flex-wrap: wrap-reverse;
+}
 
+.card-maja{
+  flex: 1 0 150px;
+}
 
 
 /* Main container for each cart item */

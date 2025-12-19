@@ -13,10 +13,10 @@ const Menu = ( ) => {
     return(
         <div>
           <Slider/>
-          <div className="card-container">
+          <div className="card-container card-flex">
           {
             cart.map((e)=>{
-              return <div className="card cartitems-format cartitems-format-main cart" style={{width : '25rem'}}>
+              return <div className="card card-maja cartitems-format cartitems-format-main cart" style={{width: '600px'}}>
                 
               <img className="card-img-top" src={e.image} alt="#"/>
               <div className="card-body">
