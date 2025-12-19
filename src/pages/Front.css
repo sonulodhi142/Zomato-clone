@@ -49,17 +49,19 @@
         position: absolute;
         top: 40px;
         right: 110px;
-        animation: momo .5s ease-in 0s;
+        animation: momo 1s ease-in-out;
       }
 
       @keyframes momo {
         from {
           top: 0;
           right: 0;
+          transform: scale(0);
         }
         to {
           top: 40px;
           right: 110px;
+          transform: scale(100%);
         }
       }
 
@@ -68,7 +70,7 @@
         position: absolute;
         top: 30vh;
         left: 10%;
-        animation: burger .5s ease-in 0s;
+        animation: burger 1s ease-in 0s;
       }
       @keyframes burger {
         from {
@@ -91,10 +93,13 @@
         from {
             right: 0;
             top: 200px;
+            transform: scale(100%);
         }
         to {
           right: 80px;
           top: 250px;
+          transform: scale(100%);
+
         }
       }
       .tomato2 {
