@@ -5,7 +5,7 @@ import tomato from "./image/tomato.avif";
 import burgur from "./image/burger.avif";
 import momo from "./image/momo.avif";
 import bgvideo from "./image/bgVideo.mp4";
-import mobile from "./image/mobile.avif";
+import calender from "./image/calender.avif";
 
 const Front = () => {
   return (
@@ -67,6 +67,7 @@ const Front = () => {
           <div className="page-3-mobile page-3-card">
             {/* <img src={mobile} alt="" /> */}
             <div className="calender">
+              <img src={calender} alt="" />
               <h3>schedule</h3>
               <p>your order</p>
             </div>
