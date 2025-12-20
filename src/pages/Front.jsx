@@ -1,22 +1,17 @@
 import React from "react";
 import "./Front.css";
-import pizza from './image/pizza.avif'
-import tomato from './image/tomato.avif'
-import burgur from './image/burger.avif'
-import momo from './image/momo.avif'
-import bgvideo from './image/bgVideo.mp4'
+import pizza from "./image/pizza.avif";
+import tomato from "./image/tomato.avif";
+import burgur from "./image/burger.avif";
+import momo from "./image/momo.avif";
+import bgvideo from "./image/bgVideo.mp4";
+import mobile from "./image/mobile.avif";
 
 const Front = () => {
   return (
     <>
       <section className="main">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="bg-video"
-        >
+        <video autoPlay muted loop playsInline className="bg-video">
           <source src={bgvideo} type="video/mp4" />
         </video>
 
@@ -50,6 +45,41 @@ const Front = () => {
           </p>
         </div>
       </section>
+      <section className="page-3">
+        <div className="page-3-heading">
+          <h1>What’s waiting for you </h1>
+          <h1>on the app?</h1>
+          
+        </div>
+        <div className="page-3-para">
+          <p>Our app is packed with features that </p>
+          <p>enable you to experience food</p>
+          <p>delivery like never before</p>
+        </div>
+
+        <div className="page-3-contant">
+          <div className="card-4 page-3-card">
+            <div className="card-4-item">card</div>
+            <div className="card-4-item">card</div>
+            <div className="card-4-item">card</div>
+            <div className="card-4-item">card</div>
+          </div>
+          <div className="page-3-mobile page-3-card">
+            {/* <img src={mobile} alt="" /> */}
+            <div className="calender">
+              <h3>schedule</h3>
+              <p>your order</p>
+            </div>
+          </div>
+          <div className="card-4 page-3-card">
+            <div className="card-4-item">card</div>
+            <div className="card-4-item">card</div>
+            <div className="card-4-item">card</div>
+            <div className="card-4-item">card</div>
+          </div>
+        </div>
+      </section>
+
     </>
   );
 };

@@ -87,21 +87,23 @@
         position: absolute;
         right: 80px;
         top: 250px;
-      animation: tomato1 .5s ease-in 0s;
-      }
-      @keyframes tomato1 {
-        from {
-            right: 0;
-            top: 200px;
-            transform: scale(100%);
-        }
-        to {
-          right: 80px;
-          top: 250px;
-          transform: scale(100%);
+        animation-name: tomato1;
+        animation-timing-function: ease-in-out;
 
-        }
-      }
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+}
+
+@keyframes tomato1 {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
       .tomato2 {
         width: 50px;
         position: absolute;
@@ -149,3 +151,51 @@
       .bgWhiteContant h1 {
         color: red;
       }
+
+      .page-3{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: pink;
+      }
+      .page-3 .page-3-heading{
+        margin-top: 50px;
+        color: red;
+        font-size: 1.5rem;
+      }
+      .page-3 .page-3-para{
+        margin-top: 50px;
+        color: rgb(83, 82, 82);
+        font-size: 1rem;
+      }
+      .page-3 .page-3-para p{
+        word-spacing: 5px;
+        font-size: 20px;
+      }
+      .page-3-contant{
+        display: flex;
+        gap: 30px;
+      }
+      .page-3-contant .page-3-card{
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+        border: 3px solid;
+      }
+      .page-3-mobile{
+        background-image: url(./image/mobile.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .page-3-mobile img{
+        width: 100%;
+        height: 100%;
+      }
+
+      
