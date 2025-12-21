@@ -195,7 +195,8 @@
         animation: showup 5s both ;
         animation-timing-function: ease;
         animation-timeline: view(100% 30%);
-        animation-range: entry 20% cover 100%;
+        animation-range: entry 0% cover 80%;
+
       }
       @keyframes showup {
         from{
@@ -212,5 +213,8 @@
         height: 30%;
       }
 
-
+.card-4{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
       

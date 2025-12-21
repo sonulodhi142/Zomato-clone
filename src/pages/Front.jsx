@@ -59,7 +59,9 @@ const Front = () => {
 
         <div className="page-3-contant">
           <div className="card-4 page-3-card">
-            <div className="card-4-item">card</div>
+            <div className="card-4-item">
+              <img src="" alt="" />
+            </div>
             <div className="card-4-item">card</div>
             <div className="card-4-item">card</div>
             <div className="card-4-item">card</div>
