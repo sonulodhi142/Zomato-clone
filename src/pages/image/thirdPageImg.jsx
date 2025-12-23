@@ -20,34 +20,33 @@ export const page3_data = [
         img : img2
     },
     {
-        id : 1,
-        name : 'Veg Mode',
-        img : img1
+        id : 3,
+        name : 'Food On Train',
+        img : img3
     },
     {
-        id : 1,
-        name : 'Veg Mode',
-        img : img1
+        id : 4,
+        name : 'Gift Cards',
+        img : img4
     },
     {
-        id : 1,
-        name : 'Veg Mode',
-        img : img1
+        id : 5,
+        name : 'Gourmet',
+        img : img5
     },
     {
-        id : 1,
+        id : 6,
         name : 'Veg Mode',
-        img : img1
+        img : img16
     },
     {
-        id : 1,
-        name : 'Veg Mode',
-        img : img1
+        id : 7,
+        name : 'Offer',
+        img : img7
     },
     {
-        id : 1,
-        name : 'Veg Mode',
-        img : img1
-    },
-    
+        id : 8,
+        name : 'Plan a Pary',
+        img : img8
+    }
 ]
