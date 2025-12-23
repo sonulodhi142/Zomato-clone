@@ -182,7 +182,6 @@
         width: 300px;
         height: 300px;
         margin-top: 20px;
-        border: 3px solid;
       }
       .page-3-mobile{
         background-image: url(./image/mobile.avif);
@@ -216,5 +215,14 @@
 .card-4{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  
 }
-      
+   
+.card-4 .card-4-item{
+  box-shadow: 2px -2px 2px 2px black;
+  border-radius: 10px;
+}
+.card-4 .card-4-item img{
+  width: 100px;
+}

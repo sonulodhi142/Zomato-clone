@@ -3,12 +3,12 @@ import img2 from './healthy.avif'
 import img3 from './foodOnTrain.avif'
 import img4 from './giftCards.avif'
 import img5 from './gourmet.avif'
-import img6 from './mobile.avif'
+import img6 from './collections.avif'
 import img7 from './offer.avif'
 import img8 from './planAParty.avif'
 
 
-export const page3_data = [
+const page3_data = [
     {
         id : 1,
         name : 'Veg Mode',
@@ -36,8 +36,8 @@ export const page3_data = [
     },
     {
         id : 6,
-        name : 'Veg Mode',
-        img : img16
+        name : 'Collections',
+        img : img6
     },
     {
         id : 7,
@@ -50,3 +50,5 @@ export const page3_data = [
         img : img8
     }
 ]
+
+export default page3_data;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Front.css";
 import pizza from "./image/pizza.avif";
 import tomato from "./image/tomato.avif";
@@ -6,8 +6,16 @@ import burgur from "./image/burger.avif";
 import momo from "./image/momo.avif";
 import bgvideo from "./image/bgVideo.mp4";
 import calender from "./image/calender.avif";
+import  page3_data  from "./image/thirdPageImg";
 
 const Front = () => {
+  const [LeftimgData , setLeftimgData] = useState([]);
+  const left = page3_data.filter((data, i)=> i <= 3);
+  const right = page3_data.filter((data, i)=> i > 3);
+  
+  
+ 
+
   return (
     <>
       <section className="main">
@@ -59,12 +67,15 @@ const Front = () => {
 
         <div className="page-3-contant">
           <div className="card-4 page-3-card">
-            <div className="card-4-item">
-              <img src="" alt="" />
-            </div>
-            <div className="card-4-item">card</div>
-            <div className="card-4-item">card</div>
-            <div className="card-4-item">card</div>
+            {
+              
+              left.map((data, i) => {
+                return <div key={i} className="card-4-item">
+                  <img src={data.img} alt="" />
+                  <h4>{data.name}</h4>
+                </div>
+              })
+            }
           </div>
           <div className="page-3-mobile page-3-card">
             {/* <img src={mobile} alt="" /> */}
@@ -75,10 +86,15 @@ const Front = () => {
             </div>
           </div>
           <div className="card-4 page-3-card">
-            <div className="card-4-item">card</div>
-            <div className="card-4-item">card</div>
-            <div className="card-4-item">card</div>
-            <div className="card-4-item">card</div>
+            {
+              
+              right.map((data, i) => {
+                return <div key={i} className="card-4-item">
+                  <img src={data.img} alt="" />
+                  <h4>{data.name}</h4>
+                </div>
+              })
+            }
           </div>
         </div>
       </section>
